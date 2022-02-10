@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    background-color: #EEE2DC;
+}
+.title {
+    margin: 0px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Special Elite', cursive;                                                
+}
+
+.container {
+    padding: 1px 1px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 32px 16px;
+    height: 650px;
+
+}
+
+.game {
+    width: 800px;
+    height: 700px;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}  
+
+.grid-cell {
+	border: 1px solid #000;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 28px;
+}
+
+.grid-cell:nth-child(-n + 3) {
+	border-top: none;
+}
+
+.grid-cell:nth-child(3n + 1) {
+	border-left: none;
+}
+
+.grid-cell:nth-child(3n + 3) {
+	border-right: none;
+}
+
+.grid-cell:nth-last-of-type(-n + 3) {
+	border-bottom: none;
+}
+
+.grid-cell:not(.disabled):hover {
+	background: #BAB2B5;
+}
+
+.menu {
+    box-sizing: border-box;
+    width: calc(50% - 32px);
+    /*height: calc(50% - 32px);*/
+    margin: 0 16px;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    flex-direction: column
+ 
+}
+
+.first-player {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.second-player {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+h1 {
+    padding: 10px 10px;
+    font-size: 3em;
+}
+
+label {
+    display: block;
+    margin-right: 10px;
+    height: 22px;
+    padding-top: 13px;
+    font-size: 2em;
+    vertical-align: middle
+}
+
+button{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 45%;
+    height: 4em;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #123c69;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
